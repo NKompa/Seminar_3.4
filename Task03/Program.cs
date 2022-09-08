@@ -6,13 +6,23 @@ int num = Convert.ToInt32(Console.ReadLine());
 int GetMult (int number)
 {
     int mult = 1;
-    int count = 1;
 
-    while (number>count)
+    for (int i = 1; i <= number; i++)
     {
-        count++;
-        mult*=count;
+        mult = mult*i;
     }
     return mult;
 }
+
+// {
+//     int mult = 1;
+//     int count = 1;
+
+//     while (number>count)
+//     {
+//         count++;
+//         mult*=count;
+//     }
+//     return mult;
+// }
 Console.WriteLine("Произведение = "+GetMult(num));
